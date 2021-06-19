@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.1
 //
 //  RxCoreLocation.swift
 //  RxCoreLocation
@@ -11,6 +11,10 @@ import PackageDescription
 
 let package = Package(
     name: "RxCoreLocation",
+    platforms: [
+        .macOS(.v10_14),
+        .iOS(.v11)
+    ],
     products: [
         .library(name: "RxCoreLocation", targets: ["RxCoreLocation"])
     ],
